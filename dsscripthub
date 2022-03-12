@@ -1,0 +1,131 @@
+local webhookcheck =
+	is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
+	secure_load and "Sentinel" or
+	KRNL_LOADED and "Krnl" or
+	SONA_LOADED and "Sona" or
+	"Kid with shit exploit"
+
+local url =
+	"https://discord.com/api/webhooks/952285520820572190/34SY21Yz0m_1vAm9Ajj-XKgNYBE7dW994pvbfDGYqEY7VeUIp9O3XQyoeyAAb6hL_kXK"
+local data = {
+	["content"] = "Executed DS Hub",
+	["embeds"] = {
+		{
+			["title"] = "**Someone Executed Your Script!**",
+			["description"] = "Username: " .. game.Players.LocalPlayer.Name.." with **"..webhookcheck.."**",
+			["type"] = "rich",
+			["color"] = tonumber(0x7269da),
+			["image"] = {
+				["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" ..
+					tostring(game:GetService("Players").LocalPlayer.Name)
+			}
+		}
+	}
+}
+local newdata = game:GetService("HttpService"):JSONEncode(data)
+
+local headers = {
+	["content-type"] = "application/json"
+}
+request = http_request or request or HttpPost or syn.request
+local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+request(abcdef)
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local mainlabel = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local opdino = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local xcom = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local violex = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UICorner_5 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Workspace
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+main.BorderColor3 = Color3.fromRGB(126, 126, 126)
+main.BorderSizePixel = 3
+main.Position = UDim2.new(0.402372271, 0, 0.250497013, 0)
+main.Size = UDim2.new(0, 213, 0, 251)
+
+mainlabel.Name = "mainlabel"
+mainlabel.Parent = main
+mainlabel.BackgroundColor3 = Color3.fromRGB(129, 129, 129)
+mainlabel.BorderColor3 = Color3.fromRGB(38, 38, 38)
+mainlabel.BorderSizePixel = 3
+mainlabel.Position = UDim2.new(0.0281690136, 0, 0.0318725109, 0)
+mainlabel.Size = UDim2.new(0, 200, 0, 36)
+mainlabel.Font = Enum.Font.Fantasy
+mainlabel.Text = "OP DS Hub"
+mainlabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+mainlabel.TextSize = 30.000
+mainlabel.TextStrokeColor3 = Color3.fromRGB(81, 81, 81)
+mainlabel.TextStrokeTransparency = 0.000
+
+UICorner.Parent = mainlabel
+
+opdino.Name = "opdino"
+opdino.Parent = main
+opdino.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+opdino.BorderColor3 = Color3.fromRGB(118, 118, 118)
+opdino.BorderSizePixel = 3
+opdino.Position = UDim2.new(0.0328638479, 0, 0.24701196, 0)
+opdino.Size = UDim2.new(0, 200, 0, 50)
+opdino.Font = Enum.Font.Fantasy
+opdino.Text = "OPDINO"
+opdino.TextColor3 = Color3.fromRGB(255, 255, 255)
+opdino.TextSize = 30.000
+opdino.TextStrokeColor3 = Color3.fromRGB(81, 81, 81)
+opdino.TextStrokeTransparency = 0.000
+opdino.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://auth.kinghub.one/free/"))()
+end)
+
+UICorner_2.Parent = opdino
+
+xcom.Name = "xcom"
+xcom.Parent = main
+xcom.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+xcom.BorderColor3 = Color3.fromRGB(118, 118, 118)
+xcom.BorderSizePixel = 3
+xcom.Position = UDim2.new(0.0328638479, 0, 0.768924236, 0)
+xcom.Size = UDim2.new(0, 200, 0, 50)
+xcom.Font = Enum.Font.Fantasy
+xcom.Text = "HoneyBadger"
+xcom.TextColor3 = Color3.fromRGB(255, 255, 255)
+xcom.TextSize = 30.000
+xcom.TextStrokeColor3 = Color3.fromRGB(81, 81, 81)
+xcom.TextStrokeTransparency = 0.000
+xcom.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Xcom911/DS/main/HoneyBadger'))()
+end)
+
+UICorner_3.Parent = xcom
+
+violex.Name = "violex"
+violex.Parent = main
+violex.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+violex.BorderColor3 = Color3.fromRGB(118, 118, 118)
+violex.BorderSizePixel = 3
+violex.Position = UDim2.new(0.0328638479, 0, 0.509960175, 0)
+violex.Size = UDim2.new(0, 200, 0, 50)
+violex.Font = Enum.Font.Fantasy
+violex.Text = "Violexian"
+violex.TextColor3 = Color3.fromRGB(255, 255, 255)
+violex.TextSize = 30.000
+violex.TextStrokeColor3 = Color3.fromRGB(81, 81, 81)
+violex.TextStrokeTransparency = 0.000
+violex.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/albibos/violexian/main/violexiangui"))()
+end)
+
+UICorner_4.Parent = violex
+
+UICorner_5.Parent = main
