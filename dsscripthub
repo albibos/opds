@@ -54,6 +54,8 @@ main.BorderColor3 = Color3.fromRGB(126, 126, 126)
 main.BorderSizePixel = 3
 main.Position = UDim2.new(0.402372271, 0, 0.250497013, 0)
 main.Size = UDim2.new(0, 213, 0, 251)
+main.Active = true
+main.Draggable = true
 
 mainlabel.Name = "mainlabel"
 mainlabel.Parent = main
