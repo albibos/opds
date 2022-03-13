@@ -45,7 +45,7 @@ local UICorner_5 = Instance.new("UICorner")
 
 --Properties:
 
-ScreenGui.Parent = game.Workspace
+ScreenGui.Parent = game.CoreGui
 
 main.Name = "main"
 main.Parent = ScreenGui
